@@ -1,0 +1,49 @@
+a,b=input().split()
+a1=int((int(a)-1)/2)
+b1=int((int(b)-3)/2)
+s=int(3)
+for k in range(int(a)):
+    if(k==a1):
+        i=int(1)
+        wel=int((int(b)-7)/2)
+        while(i<int(b)+1):
+            if(i<=wel):
+                print("-",end="")
+            if(i==wel+1):
+                print("WELCOME",end="")
+                i=i+7
+            if(i>wel):
+                print("-",end="")
+            i=i+1
+        s=s-6 
+    else:
+        j=int(0)
+        while(j<int(b)):
+            if(j<(int(b)-s)/2):
+                print("-",end="")
+            if(j==(int(b)-s)/2):
+                for i in range(int(s/3)):
+                    print(".|.",end="")
+                j=j+s
+            if(j>(int(b)-s)/2):
+                print("-",end="")
+            j=j+1
+    if(k<a1):
+        s=s+6
+    if(k>a1):
+        s=s-6  
+    print()   
+    """if(k>a1):
+        j=int(0)
+        while(j<int(b)):
+            if(j<(int(b)-s)/2):
+                print("-",end="")
+            if(j==(int(b)-s)/2):
+                for i in range(int(s/3)):
+                    print(".|.",end="")
+                j=j+s
+            if(j>(int(b)-s)/2):
+                print("-",end="")
+            j=j+1"""
+        
+    print()
